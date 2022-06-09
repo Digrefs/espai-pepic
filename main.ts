@@ -21,7 +21,7 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     ASTEROIDE.destroy()
-    otherSprite.destroy(effects.confetti, 500)
+    otherSprite.destroy(effects.hearts, 500)
     info.changeScoreBy(1)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
